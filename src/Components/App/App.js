@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { SearchBar } from '../SearchBar/SearchBar.js';
-import { SearchResults } from '../SearchResults/SearchResults.js';
-import { Playlist } from '../Playlist/Playlist.js';
+import SearchBar from '../SearchBar/SearchBar.js';
+import SearchResults from '../SearchResults/SearchResults.js';
+import Playlist from '../Playlist/Playlist.js';
 
-export class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -20,3 +20,5 @@ export class App extends React.Component {
     );
   }
 }
+
+export default App;
