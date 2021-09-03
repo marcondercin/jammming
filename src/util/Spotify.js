@@ -31,8 +31,7 @@ const Spotify = {
       headers: {
         Authorization: `Bearer ${accessToken}`
       }
-    }
-    ).then(response => {
+    }).then(response => {
       return response.json();
     }).then(jsonResponse => {
       if (!jsonResponse.tracks) {
@@ -73,8 +72,7 @@ const Spotify = {
           headers: headers,
           method: 'POST',
           body: JSON.stringify({URIs: trackURIs})
-        }
-        )
+        })
       })
     })
   }
